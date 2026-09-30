@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\GenresController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
@@ -46,5 +47,7 @@ Route::prefix('api')->group(function () {
             Route::patch('/books/{book}', [BookController::class, 'update']);
             Route::delete('/books/{book}', [BookController::class, 'destroy']);
             Route::patch('/books/{id}/restore', [BookController::class, 'restore']);
+
+            Route::get('/dashboard', [DashboardController::class, 'index']);
         });
 });

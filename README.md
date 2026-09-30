@@ -1,6 +1,6 @@
 # FuXi Backend
 
-Backend da aplicação **FuXi**, desenvolvido com uma arquitetura baseada em **Docker**, **PHP** e **Laravel**.
+Backend da aplicação **FuXi**, um gerenciador de livros estilo biblioteca, desenvolvido com uma arquitetura baseada em **Docker**, **PHP** e **Laravel**.
 
 ## Stack
 
